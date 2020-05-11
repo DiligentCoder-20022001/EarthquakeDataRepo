@@ -1,0 +1,106 @@
+<?php
+
+include "search_magnitude.php";
+include "search_place.php";
+
+?>
+
+<html>
+<head>
+<title><h1>"EARTHQUAKE STATISTICS"</h1></title>
+</head>
+<body>
+<style>
+body{background-color:yellow;}
+h1{
+color:blue;
+font-family:comic sans ms;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+p{
+color:dark green;
+font family:comic sans ms;
+}
+#p4 {background-color: hsl(120, 60%, 70%);}
+.button1 {background-color: #008CBA;}
+.button1 {font-size: 16px;}
+.button1 {padding: 10px 24px;}
+.button1 {border-radius: 8px;}
+.button1 {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+</style>
+<div class="header">
+<h1 id="p4" ><u>EARTHQUAKE STATISTICS</u></h1>
+</div>
+
+<fieldset>
+<legend><h2 id="p4">KEYS FOR REFERENCE</h2></legend>
+<label><p>An earthquake (also known as a quake, tremor or temblor) is the shaking of the surface of the Earth, resulting from the sudden release of energy in the Earth's lithosphere that creates seismic waves. Earthquakes can range in size from those that are so weak that they cannot be felt to those violent enough to toss people around and destroy whole cities. The seismicity, or seismic activity, of an area is the frequency, type and size of earthquakes experienced over a period of time.</p></legend>
+<legend><p>Here we have prepared a key for some of the earthquake related terms in the given form:</p></legend>
+<legend><h3><u>NON TECTONIC:</u></h3></legend>
+<legend><p>Earthquakes which arise due to factors other than plate movements</p></legend>
+<legend><h3><u>TECTONIC:</u></h3></legend>
+<legend><p>Earthquakes which arise due to the movement of plates</p></legend>
+<legend><h3><u>SURFACE:</u></h3></legend>
+<legend><p>Have their epicentre within 10 km.</p></legend>
+<legend><h3><u>SHALLOW:</u></h3></legend>
+<legend><p>Have their epicentre within 10 to 50 kms.</p></legend>
+<legend><h3><u>INTERMEDIATE FOCUS:</u></h3></legend>
+<legend><p>Have their epicentre within 50 to 300 kms.</p></legend>
+<legend><h3><u>DEEP FOCUS:</u></h3></legend>
+<legend><p>Have their epicentre above 300 andcause a lot of danger</p></legend>
+<legend><p>The site is made to enlighten people some of the world's largest earthquakes which have changed the history of mankind</p></legend>
+</fieldset>
+<form action="search_magnitude.php" >
+
+<fieldset>
+<legend><h2 id="p4">Search by magnitude of earthquake here:</h2></legend>
+<label><h2>Magnitude of the earthquake</h2><label>
+<label><input type="radio" name="moe" value=1>1</label>
+<label><input type="radio" name="moe" value=2>2</label>
+<label><input type="radio" name="moe" value=3>3</label>
+<label><input type="radio" name="moe" value=4>4</label>
+<label><input type="radio" name="moe" value=5>5</label>
+<label><input type="radio" name="moe" value=6>6</label>
+<label><input type="radio" name="moe" value=7>7</label>
+<label><input type="radio" name="moe" value=8>8</label>
+<label><input type="radio" name="moe" value=9>9</label>
+<label><input type="radio" name="moe" value=10>10</label>
+<label><button type="submit" class="button1" name="submit">SUBMIT</button></label>
+</fieldset>
+</form>
+<form action="search_place.php" >
+
+<fieldset>
+<legend><h2 id="p4">Search by place of earthquake here:</h2></legend>
+<label><h2>place of the earthquake</h2><label>
+<label><input type="text" name="place"></label>
+<label><button type="submit" class="button1" name="submit">SUBMIT</button></label>
+</fieldset>
+</form>
+
+
+
+</html>
+
+
